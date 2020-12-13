@@ -1,0 +1,86 @@
+/* Esto ayuda a que sea responsive */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* hasta aqui muy impotante */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.entrada-blog a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Esto ayuda a que sea responsive */
+
+.contenedor {
+    /* 1200px = 120rem */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* hasta aqui muy impotante */
+
+body {
+    background: cornflowerblue;
+}
+
+@media (min-width: 500px) {
+    body {
+        background: lightcoral;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        background: wheat;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 500px) {
+    h1 {
+        font-size: 4rem;
+        
+    }
+}
