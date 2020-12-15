@@ -40,7 +40,7 @@ h3 {
     font-size: 3.2rem;
 }
 
-h2 {
+h4 {
     font-size: 2.8rem;
 }
 
@@ -58,6 +58,34 @@ img {
     margin: 0;
 }
 
+/* Grid */
+
+@media (min-width: 768px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .centrar-columnas {
+        justify-content: center;
+    }
+    .columnas-6 {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .columnas-4 {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+    .columnas-8 {
+        flex: 0 0 calc(66.6% - 1rem);
+    }
+    .columnas-10 {
+        flex: 0 0 calc(83.3% - 1rem);
+    }
+    .columnas-12 {
+        flex: 0 0 100%;
+    }
+}
+
 /* Botones */
 
 .btn {
@@ -71,12 +99,18 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 2rem;
+    flex: 0 0 100%;
+}
+
+.btn:hover{
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
     .btn {
         display: inline-block;
         margin: 2rem 0;
+        flex: 0 0 auto;
     }
 }
 
@@ -158,7 +192,7 @@ img {
     font-size: 2.2rem;
 }
 
-/* Contenido Principal */
+/* Contenido Principal HOME*/
 
 .contenido-principal {
     display: flex;
@@ -216,6 +250,7 @@ img {
 }
 
 .curso {
+    padding-top: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid #e1e1e1;
 }
@@ -230,7 +265,7 @@ img {
     font-size: 2rem;
 }
 
-.curso p span {
+.curso p span, .curso p.descripcion {
     font-weight: 400;
 }
 
@@ -252,4 +287,43 @@ img {
 
 .site-footer p span {
     font-weight: 700;
+}
+
+/* Contacto */
+
+.formulario-contacto {
+    background: #ffffff;
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .formulario-contacto {
+        margin-top: -10rem;
+    }
+}
+
+.centrar-columnas .campo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.centrar-columnas .campo label{
+    flex: 0 0 8rem;
+}
+
+.centrar-columnas .campo input:not([type="submit"]),
+.formulario-contacto textarea{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+.formulario-contacto textarea{
+    height: 20rem;
+}
+
+.formulario-contacto .enviar{
+    display: flex;
+    justify-content: flex-end;
 }
