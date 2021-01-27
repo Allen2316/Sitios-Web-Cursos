@@ -5,7 +5,21 @@ $(function(){
     'use strict';
     
     
-  var proximosViajes = ['Londres', 'Valencia', 'Madrid', 'Paris', 'Milan'];
+    $(".nuestros-servicios div:first").show();
+    $(".servicios nav a:first").addClass("activo");
+
+    $(".servicios nav a").on("click", mostrarTabs);
+
+    function mostrarTabs() {
+        $(".servicios nav a").removeClass("activo");
+        $(this).addClass("activo");
+        var enlace = $(this).attr("href");
+        $(".nuestros-servicios div").fadeOut();        
+        $(enlace).fadeIn();
+        return false;
+    }
+
+  /* var proximosViajes = ['Londres', 'Valencia', 'Madrid', 'Paris', 'Milan'];
     
     console.log(proximosViajes);
     
@@ -29,7 +43,7 @@ $(function(){
     
     $.each(viajesPorFecha, function(i, v) {
        $('aside').append('<li>'+ i + ' - '+ v + '</li>'); 
-    });
+    }); */
     
   
     

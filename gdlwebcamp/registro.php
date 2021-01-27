@@ -1,78 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="">
-
-<head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-
-    <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-
-    <!-- Add your site or application content here -->
-    <header class="site-header">
-        <div class="hero">
-            <div class="contenido-header">
-                <nav class="redes-sociales">
-                    <a href="#"><i class="fa fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-youtube"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                </nav>
-                <div class="informacion-evento">
-                    <div class="clearfix">
-                        <p class="fecha"><i class="fa fa-calendar"></i> 15-28-Enero</p>
-                        <p class="ciudad"><i class="fa fa-map-marker"></i> Loja, Ecuador</p>
-                    </div>
-                    <h1 class="nombre-sitio">GDLWebCamp</h1>
-                    <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
-                </div><!-- informacion-evento -->
-            </div>
-        </div><!-- hero -->
-    </header>
-
-    <div class="barra">
-        <div class="contenedor clearfix">
-            <div class="logo">
-                <img src="img/logo.svg" alt="Logo gdlwebcamp">
-            </div>
-
-            <div class="menu-movil">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <nav class="navegacion-principal">
-                <a href="#">Conferencia</a>
-                <a href="#">Calendario</a>
-                <a href="#">Invitados</a>
-                <a href="registro.html">Reservaciones</a>
-            </nav>
-        </div><!-- contenedor -->
-    </div><!-- Barra -->
+<?php include_once "includes/templates/header.php" ?>
 
     <section class="seccion contenedor">
         <h2>Registro de Usuarios</h2>
@@ -286,61 +212,11 @@
                         <p>Total:</p>
                         <div id="suma-total">
                         </div>
-                        <input id="btnRegistro" type="submit" class="button" value="Pagar">                        
+                        <input id="btnRegistro" type="submit" class="button" value="Pagar">
                     </div><!-- total -->
                 </div><!-- caja -->
             </div><!-- resumen -->
         </form>
     </section>
 
-    <footer class="site-footer">
-        <div class="contenedor clearfix">
-            <div class="footer-informacion">
-                <h3>Sobre <span>gdlwebcamp</span></h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit fugit eaque et sapiente dolore!
-                    Quam harum
-                    ducimus doloremque, asperiores eos tempore eum illum quo repellendus id tempora, facilis consectetur
-                    aut?</p>
-            </div>
-            <div class="ultimos-tweets">
-                <h3>Ultimos <span>tweets</span></h3>
-                <ul>
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Quia impedit nisi dolore. Minus, modi rerum.</li>
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia impedit nisi dolore. Minus, modi
-                        rerum.
-                    </li>
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia impedit nisi dolore. Minus, modi
-                        rerum.
-                    </li>
-                </ul>
-            </div>
-            <div class="menu">
-                <h3>Redes <span>sociales</span></h3>
-                <nav class="redes-sociales">
-                    <a href="#"><i class="fa fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-youtube"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                </nav>
-            </div>
-        </div>
-
-        <p class="copyrigth">Todos los Derechos Reservados GDLWebCamp 2021</p>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
-</html>
+    <?php include_once "includes/templates/footer.php" ?>
